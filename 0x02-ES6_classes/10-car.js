@@ -1,5 +1,5 @@
 export default class Car {
-  constructor(brand,motor,color) {
+  constructor(brand, motor, color) {
     this._brand = brand;
     this._motor = motor;
     this._color = color;
@@ -26,7 +26,5 @@ export default class Car {
     else throw TypeError('color must be a string');
   }
 
-
-  cloneCar(){return new this.constructor()}
-
+  cloneCar() { return new this.constructor(); }
 }
