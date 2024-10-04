@@ -1,12 +1,11 @@
-function success(){
-    return { status: 200, body: 'Success' };
+function success() {
+  return { status: 200, body: 'success' };
 }
-function fail(){
-    return new Error();
-
+function fail() {
+  return new Error();
 }
-function final(){
-    console.log("Got a response from the API");
+function final() {
+  console.log('Got a response from the API');
 }
 export default function handleResponseFromAPI(promise) {
   return promise.then(success).catch(fail).finally(final);
