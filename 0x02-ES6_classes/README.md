@@ -1,1 +1,1 @@
-# 0x00-ES6_basic
+# 0x02-ES6_classes
