@@ -36,6 +36,7 @@ export class StudentHolberton {
   }
 
   get fullStudentDescription() {
+    // Use `this` instead of `self`
     return `${this._firstName} ${this._lastName} - ${this._holbertonClass.year} - ${this._holbertonClass.location}`;
   }
 }
