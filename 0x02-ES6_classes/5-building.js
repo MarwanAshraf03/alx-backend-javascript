@@ -1,5 +1,3 @@
-// import Currency from './3-currency.js';
-
 export default class Building {
   constructor(sqft) {
     if ((typeof sqft) === 'number') this._sqft = sqft;
