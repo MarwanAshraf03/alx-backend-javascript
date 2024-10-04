@@ -1,3 +1,6 @@
 import handleProfileSignup from "./3-all";
 
-handleProfileSignup();
+const ret = handleProfileSignup();
+
+console.log(typeof Promise);
+
