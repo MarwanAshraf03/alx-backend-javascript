@@ -4,7 +4,7 @@ export default function createInt8TypedArray(length, position, value) {
   try {
     arr[position] = value;
   } catch (Error) {
-    throw Error('Position outside range');
+    throw new Error('Position outside range');
   }
   return arr;
 }
