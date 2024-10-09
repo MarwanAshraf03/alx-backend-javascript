@@ -1,3 +1,7 @@
 export default function hasValuesFromArray(set, array) {
-  return (new Set(array).isSubsetOf(set));
+  let flag = true;
+  array.forEach((element) => {
+    if (!(set.has(element))) flag = false;
+  });
+  return flag;
 }
