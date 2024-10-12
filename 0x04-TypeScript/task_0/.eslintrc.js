@@ -11,7 +11,12 @@ module.exports =  {
 	rules:  {
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
   };
+=======
+  };
+  
+>>>>>>> ffe517113231fafeb48cf7baace9a5f0823454e1
 =======
   };
   
