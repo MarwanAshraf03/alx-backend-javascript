@@ -32,7 +32,7 @@ function countStudents(path) {
       );
     });
   } catch (ENOENT) {
-    console.log('Cannot load the database');
+    throw new Error('Cannot load the database');
   }
 }
 module.exports = countStudents;
