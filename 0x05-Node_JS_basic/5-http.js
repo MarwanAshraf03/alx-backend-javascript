@@ -37,7 +37,6 @@ function countStudents(path) {
     throw new Error('Cannot load the database');
   }
 }
-module.exports = countStudents;
 
 const app = http
   .createServer((req, res) => {
