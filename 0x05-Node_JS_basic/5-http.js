@@ -46,7 +46,7 @@ const app = http
     }
     if (req.url === '/students') {
       res.writeHead(200, { 'Content-Type': 'text/plain' });
-      res.end(countStudents('database.csv'));
+      res.end(countStudents(process.argv[2]));
     }
   })
   .listen(1245);
