@@ -39,7 +39,7 @@ function countStudents(path) {
     return str;
   } catch (ENOENT) {
     return `This is the list of our students
-  Cannot load the database`;
+Cannot load the database`;
   }
 }
 
