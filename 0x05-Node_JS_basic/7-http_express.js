@@ -48,9 +48,9 @@ app.get('/', (req, res) => {
 });
 app.get('/students', (req, res) => {
   try {
-    res.end(countStudents(process.argv[2]));
+    res.send(countStudents(process.argv[2]));
   } catch (error) {
-    res.end();
+    res.send();
   }
 });
 
