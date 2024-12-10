@@ -36,7 +36,8 @@ function countStudents(path) {
 
     return str;
   } catch (ENOENT) {
-    throw new Error("Cannot load the database");
+    return `This is the list of our students
+Cannot load the database`;
   }
 }
 
@@ -48,8 +49,11 @@ const app = http
     }
     if (req.url === "/students") {
       res.writeHead(200, { "Content-Type": "text/plain" });
-      //   res.end(countStudents("./database.csv"));
-      res.end(countStudents(process.argv[2]));
+      try {
+        res.end(countStudents(process.argv[2]));
+      } catch (error) {
+        res.end();
+      }
     }
   })
   .listen(1245);
