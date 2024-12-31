@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "es6",
+    "target": "es5",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true
+  }
+}
+
+// // {
+// //   "compilerOptions": {
+// //     "module": "none",
+// //     "target": "ES6",
+// //     "outFile": "task_4/js/dist/main.js"
+// //   },
+// //   "include": ["./js/**/*.ts"]
+// // }
+
+// {
+//   "compilerOptions": {
+//     "module": "none",
+//     "target": "ES6",
+//     "outFile": "task_4/js/dist/main.js"
+//   },
+//   "include": ["./js/**/*.ts", "./js/main.ts"]
+// }
