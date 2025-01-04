@@ -17,6 +17,12 @@ describe("calculateNumber", () => {
   it("should return 6 when adding 1.5 and 3.7", () => {
     assert.strictEqual(calculateNumber(1.5, 3.7), 6);
   });
+  it("should handle negative numbers correctly", () => {
+    assert.strictEqual(calculateNumber(-1.4, -3.6), -5);
+  });
+  it("should handle zero correctly", () => {
+    assert.strictEqual(calculateNumber(0, 0), 0);
+  });
 });
 
 // const assert = require("assert");
