@@ -53,7 +53,7 @@ describe("calculateNumber", () => {
     assert.strictEqual(calculateNumber("DIVIDE", 1.4, 1), 1);
   });
   it("should return 0 for DIVIDE of 1 / 3", () => {
-    assert.equal(calculateNumber("DIVIDE", 1, 3), 0.33);
+    assert.equal(calculateNumber("DIVIDE", 1, 3), 0.3333333333333333);
   });
   it("should return 0.25 for DIVIDE of 1 / 3.7", () => {
     assert.strictEqual(calculateNumber("DIVIDE", 1, 3.7), 0.25);
