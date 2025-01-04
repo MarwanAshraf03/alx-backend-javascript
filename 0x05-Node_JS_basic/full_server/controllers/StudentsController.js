@@ -11,7 +11,9 @@ export class StudentsController {
         Object.keys(data).forEach((e) => {
           //   response.send(
           // );
-          res += `\nNumber of students in ${e}: ${data[e].length}. List: ${data[e]}`;
+          res += `\nNumber of students in ${e}: ${data[e].length}. List: ${data[
+            e
+          ].join(", ")}`;
         });
         response.send(res);
       })
@@ -30,7 +32,7 @@ export class StudentsController {
           return response.end();
         }
         response.statusCode = 200;
-        response.send(`List: ${data[request.params.major]}`);
+        response.send(`List: ${data[request.params.major].join(", ")}`);
       })
       .catch(() => {
         response.statusCode = 500;
