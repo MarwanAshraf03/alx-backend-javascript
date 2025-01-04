@@ -1,12 +1,12 @@
 // const express = require('express');
 // const fs = require('fs');
-import express from "express";
-import router from "./routes/index";
+import express from 'express';
+import router from './routes/index';
 
 const app = express();
 const port = 1245;
 
-app.use("/", router);
+app.use('/', router);
 
 // app.get("/", (req, res) => {
 //   res.send("Hello Holberton School!");

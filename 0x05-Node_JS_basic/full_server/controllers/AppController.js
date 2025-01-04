@@ -1,5 +1,5 @@
-export class AppController {
+export default class AppController {
   static getHomepage(request, response) {
-    response.send("Hello Holberton School!");
+    response.send('Hello Holberton School!');
   }
 }
