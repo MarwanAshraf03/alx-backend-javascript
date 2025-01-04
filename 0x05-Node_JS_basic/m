@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+for f in $(ls)
+do
+echo "$f"
+cat $f
+echo "-----------------------------------------"
+done
