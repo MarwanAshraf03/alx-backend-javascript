@@ -53,19 +53,19 @@ describe("calculateNumber", () => {
     assert.strictEqual(calculateNumber("DIVIDE", 1.4, 1), 1);
   });
   it("should return 0 for DIVIDE of 1 / 3", () => {
-    assert.strictEqual(calculateNumber("DIVIDE", 1, 3), 0);
+    assert.equal(calculateNumber("DIVIDE", 1, 3), 0.33);
   });
-  it("should return 0 for DIVIDE of 1 / 3.7", () => {
-    assert.strictEqual(calculateNumber("DIVIDE", 1, 3.7), 0);
+  it("should return 0.25 for DIVIDE of 1 / 3.7", () => {
+    assert.strictEqual(calculateNumber("DIVIDE", 1, 3.7), 0.25);
   });
-  it("should return 0 for DIVIDE of 1.2 / 3.7", () => {
-    assert.strictEqual(calculateNumber("DIVIDE", 1.2, 3.7), 0);
+  it("should return 0.25 for DIVIDE of 1.2 / 3.7", () => {
+    assert.strictEqual(calculateNumber("DIVIDE", 1.2, 3.7), 0.25);
   });
-  it("should return 1 for DIVIDE of 1.5 / 3.7", () => {
-    assert.strictEqual(calculateNumber("DIVIDE", 1.5, 3.7), 1);
+  it("should return 0.5 for DIVIDE of 1.5 / 3.7", () => {
+    assert.strictEqual(calculateNumber("DIVIDE", 1.5, 3.7), 0.5);
   });
   it("should handle negative numbers for DIVIDE", () => {
-    assert.strictEqual(calculateNumber("DIVIDE", -1.4, -3.6), 0);
+    assert.strictEqual(calculateNumber("DIVIDE", -1.4, -3.6), 0.25);
   });
   it("should return 'Error' for DIVIDE by zero", () => {
     assert.strictEqual(calculateNumber("DIVIDE", 1, 0), "Error");

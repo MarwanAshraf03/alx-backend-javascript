@@ -6,10 +6,8 @@ function calculateNumber(type, a, b) {
     return Math.round(a) - Math.round(b);
   }
   if (type === "DIVIDE") {
-    // console.log(Math.round(b));
-    // console.log(Math.round(b) == 0);
     if (Math.round(b) == 0) return "Error";
-    return Math.round(Math.round(a) / Math.round(b));
+    return Math.round(a) / Math.round(b);
   }
 }
 
